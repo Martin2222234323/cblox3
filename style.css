@@ -1,20 +1,66 @@
-* { margin:0; padding:0; box-sizing:border-box; font-family:Arial,sans-serif;}
-body { background-color:#ffe6f0; color:#333; }
-header {
-    display:flex; justify-content:space-between; align-items:center;
-    background-color:#8000ff; padding:10px 20px; color:white;
+/* Reset y tipografía */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
-header .logo { font-size:1.5em; font-weight:bold;}
-header nav a { color:white; text-decoration:none; margin:0 10px; font-weight:bold;}
-header nav a:hover{ text-decoration:underline;}
-header .user-info { display:flex; align-items:center;}
-header .avatar { width:40px; height:40px; border-radius:50%; margin-left:10px; }
 
-main { padding:20px; }
-.welcome { text-align:center; margin-bottom:30px; }
+/* Body */
+body {
+    background-color: #ffe6f0; /* rosa suave */
+    color: #333;
+}
 
-.featured-items { display:flex; flex-wrap:wrap; gap:15px; justify-content:center; }
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8000ff; /* morado */
+    padding: 10px 20px;
+    color: white;
+}
 
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header .user-info {
+    display: flex;
+    align-items: center;
+}
+
+header .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Sección de juegos / catálogo */
 .featured-items {
     display: flex;
     flex-wrap: wrap;
@@ -25,8 +71,8 @@ main { padding:20px; }
 /* Card de juego */
 .game-card {
     background-color: #ffb3d9; /* rosa */
-    border: 2px solid #000;    /* borde negro */
-    border-radius: 15px;       /* bordes redondos */
+    border: 2px solid #000;     /* borde negro */
+    border-radius: 15px;        /* bordes redondos */
     width: 200px;
     cursor: pointer;
     transition: transform 0.2s, background-color 0.2s;
@@ -39,21 +85,18 @@ main { padding:20px; }
     background-color: #ff99cc;
 }
 
-/* Thumbnail */
 .game-card .thumbnail {
     width: 100%;
     height: 120px;
     object-fit: cover;
 }
 
-/* Nombre del juego */
 .game-card .game-title {
     font-size: 1.1em;
     font-weight: bold;
     margin: 10px 0 5px 0;
 }
 
-/* Stats */
 .game-card .game-stats {
     display: flex;
     justify-content: space-around;
@@ -61,23 +104,43 @@ main { padding:20px; }
     font-weight: bold;
 }
 
+/* Item cards */
 .item-card {
-    background-color:#ffccf0;
-    border:2px solid #8000ff;
-    border-radius:10px;
-    width:150px;
-    text-align:center;
-    padding:10px;
+    background-color: #ffccf0;
+    border: 2px solid #8000ff;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
     transition: transform 0.2s;
 }
-.item-card:hover { transform: scale(1.05); }
-.item-card img { width:100px; height:100px; margin-bottom:10px; }
-.item-card button { background-color:#8000ff; color:white; border:none;
-padding:5px 10px; border-radius:5px; cursor:pointer; font-weight:bold; }
-.item-card button:hover { background-color:#5500aa; }
 
-footer { text-align:center; padding:10px; margin-top:20px; border-top:2px solid #8000ff;}
+.item-card:hover {
+    transform: scale(1.05);
+}
 
+.item-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.item-card button {
+    background-color: #8000ff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.item-card button:hover {
+    background-color: #5500aa;
+}
+
+/* Footer */
+footer {
     text-align: center;
     padding: 10px;
     margin-top: 20px;
