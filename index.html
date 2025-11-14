@@ -1,9 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Mi Página</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBlok3 Revival</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>¡Hola, mundo!</h1>
+    <!-- Header -->
+    <header>
+        <div class="logo">CBlok3</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profile.html">Perfil</a>
+            <a href="inventory.html">Inventario</a>
+            <a href="catalog/index.html">Catálogo</a>
+            <a href="settings.html">Ajustes</a>
+        </nav>
+        <div class="user-info">
+            <span id="cbux-count">CBUX: 9999</span>
+            <img src="/img/default_avatar.png" alt="Avatar" class="avatar">
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="welcome">
+            <h1>¡Bienvenido a CBlok3 Revival!</h1>
+            <p>Explora el catálogo, personaliza tu perfil y diviértete como en Roblox 2017 😎</p>
+        </section>
+
+        <section class="featured-items" id="catalog-items">
+            <!-- Aquí se cargarán los items del catálogo -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 CBlok3 Revival. Todo simulado con amor ❤️</p>
+    </footer>
+
+    <script src="scripts/db.js"></script>
+    <script src="scripts/catalog.js"></script>
 </body>
 </html>
